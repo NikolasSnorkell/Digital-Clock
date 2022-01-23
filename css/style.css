@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Sadgwick;
+    src: url(../fonts/SedgwickAve-Regular.ttf);
+    font-weight: 400;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sadgwick;
+}
+
+body{
+    position: relative;
+    background: linear-gradient(to right,#7D70CB,#5104A1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+  height: 100vh;
+   width: 100%;
+}
+
+.container{
+    width: 900px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.233);
+    /* margin: 0 auto; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container span{
+    font-size: 7rem;
+    color: white;
+}
+.container span#day,.container span#amPm{
+    font-size: 5rem;
+    opacity: 0.7;
+}
+
+@media screen and (max-width:1200px) and (min-height:700px) {
+    .container{
+        width: 500px;
+        height: 700px;
+        flex-direction: column;
+        
+    }
+    .container span{
+        font-size: 6rem;
+
+    }
+    .container span#day,.container span#amPm{
+        font-size: 5rem;
+       
+    }
+    #doubleDots{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) and (max-height:700px) {
+    .container{
+        width: 300px;
+        height: 500px;
+        flex-direction: column;
+       
+    }
+    .container span{
+        font-size: 4rem;
+    }
+    .container span#day,.container span#amPm{
+        font-size: 4rem;
+       
+    }
+    #doubleDots{
+        display: none;
+    }
+}
+
+
